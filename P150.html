@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    
+
+    <a-camera wasd-controls-enabled="false" position="0 8 20"></a-camera>
+
+    <!-------------------------------------------Asset Management------------------------------------------->
+    <a-assets>      
+      
+      <img id = "bg" src = "https://static.vecteezy.com/system/resources/thumbnails/002/934/656/small/dunes-flat-illustration-sand-desert-exploration-panoramic-egyptian-landscape-arabic-wilderness-african-land-draught-environment-plato-view-mountain-hills-wasteland-cartoon-background-vector.jpg">  
+      <a-asset-item id="train-obj" src="./modelsP150/tinker.obj"></a-asset-item>
+      <a-assets-item id="train-mtl" src="./modelsP150/obj.mtl"></a-assets-item>
+      
+    </a-assets>
+    
+    <a-sky src = "#bg" scale = "-3 -1 -4" rotation = "180 0 0"></a-sky>
+    
+    <!-------------------------------------Circular Plane----------------------------------------------->
+   
+  
+    
+    <!--------------------------------------OBJ Models----------------------------------------------------------->   
+  
+   
+    <!--'mtl' is a material settings file which is used by many 3D object editing applications-->
+    <a-entity obj-model="obj: #train-obj; mtl: #train-mtl" position="-3 0.3 -5" scale="0.2 0.2 0.2" rotation="-90 0 0"></a-entity>
+
+   
+  
+  </a-scene>
+</body>
+
+</html>
